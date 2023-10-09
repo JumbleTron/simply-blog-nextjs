@@ -3,7 +3,7 @@ export default async function Posts() {
 	return (
 		<ul>
 			{posts.map((post) => (
-				<li><a href={`blog/${post.id}`}> {post.title} </a></li>
+				<li key={post.id}><a href={`blog/${post.id}`}> {post.title} </a></li>
 			))}
 		</ul>
 	)
